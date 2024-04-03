@@ -1,0 +1,31 @@
+#!/bin/bash -x
+
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
+ -D archetypeArtifactId=aem-project-archetype \
+ -D archetypeVersion=39 \
+ -D appTitle=Page.Properties.Example \
+ -D appId=page-prop-example \
+ -D artifactId=page-prop-example \
+ -D groupId=org.nennig.example \
+ -D package=org.nennig.example \
+ -D version=1.0-SNAPSHOT \
+ -D aemVersion=cloud \
+ -D sdkVersion=2024.3.15575.20240318T214814Z-231200 \
+ -D includeDispatcherConfig=n \
+ -D frontendModule=none \
+ -D singleCountry=y \
+ -D includeExamples=n \
+ -D includeErrorHandler=n \
+ -D includeCommerce=n \
+ -D commerceEndpoint= \
+ -D includeForms=n \
+ -D includeFormscommunications=n \
+ -D includeFormsenrollment=n \
+ -D sdkFormsVersion= \
+ -D datalayer=n \
+ -D amp=n \
+ -D enableDynamicMedia=n \
+ -D enableSSR=n \
+ -D precompiledScripts=n \
+ -D includeFormsheadless=n
